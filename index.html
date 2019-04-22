@@ -30,6 +30,17 @@ document.getElementById('fkmgllq').style.height =  window.innerHeight - 18   + '
 
 document.getElementById('fkmgllq').style.width = window.screen.width  + 'px';
 
+document.getElementById('fkmgllq').style.width = window.screen.width  + 'px';
+
+
+
+function getQueryString(name) {                                       //name为传入参数
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");     
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;						
+}
+document.getElementById('fkmgllq').src =getQueryString('num');
+
 }
 
 </script>
