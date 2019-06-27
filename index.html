@@ -20,9 +20,9 @@
 <script type="text/javascript">
 function setUrl(){
 
-	let reaurl=window.location.search;
+	var reaurl=window.location.search;
 
-	let rurl=reaurl.substr(1);
+	var rurl=reaurl.substr(1);
 
 	return rurl;
 
@@ -31,7 +31,6 @@ function setUrl(){
 
 document.getElementById('fkmgllq').src=setUrl();
 
-console.log(window.location.search);
 
 
 
